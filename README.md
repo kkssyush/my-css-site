@@ -1,1 +1,101 @@
-# my-css-site
+# my-css-site<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Приклад</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #4682b4;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    .highlight {
+      background-color: yellow;
+      padding: 5px;
+    }
+
+    #main-section {
+      margin-top: 20px;
+      padding: 15px;
+      border: 2px solid #4682b4;
+      background-color: #ffffff;
+      outline: 2px dashed orange;
+    }
+
+    .gallery {
+      margin: 10px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 180px;
+      transition: transform 0.3s;
+    }
+
+    .gallery:hover {
+      border: 1px solid #777;
+      transform: scale(1.05);
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    .desc {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .icon {
+      font-size: 24px;
+      color: #4682b4;
+      margin-right: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        float: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Моя CSS Демонстрація</h1>
+</header>
+
+<section id="main-section">
+  <p>Цей блок демонструє <span class="highlight">використання CSS селекторів</span>, outline, border та адаптивність.</p>
+  <p><i class="fas fa-check-circle icon"></i> Іконка від Font Awesome</p>
+</section>
+
+<div class="gallery">
+  <img src="https://placekitten.com/200/140" alt="Кіт 1">
+  <div class="desc">Кіт 1</div>
+</div>
+
+<div class="gallery">
+  <img src="https://placekitten.com/201/140" alt="Кіт 2">
+  <div class="desc">Кіт 2</div>
+</div>
+
+<div class="gallery">
+  <img src="https://placekitten.com/202/140" alt="Кіт 3">
+  <div class="desc">Кіт 3</div>
+</div>
+
+</body>
+</html>
